@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game Launcher</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 0 0 8px 0;
+        }
+
+        .card-url {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            word-break: break-all;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #0f172a;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎮 My Game Launcher</h1>
+        <p>Click any button below to launch your games instantly.</p>
+    </header>
+
+    <div class="container">
+        <!-- Chinese Game 3 -->
+        <div class="card">
+            <div>
+                <div class="card-title">Chinese Game 3</div>
+                <div class="card-url">https://yukityu.github.io/chinese3/</div>
+            </div>
+            <a href="https://yukityu.github.io/chinese3/" target="_blank" class="btn">跌字</a>
+        </div>
+
+        <!-- Math Game 1 -->
+        <div class="card">
+            <div>
+                <div class="card-title">Math Game 1</div>
+                <div class="card-url">https://yukityu.github.io/math1/</div>
+            </div>
+            <a href="https://yukityu.github.io/math1/" target="_blank" class="btn">星際數學單雙數</a>
+        </div>
+
+        <!-- English Game -->
+        <div class="card">
+            <div>
+                <div class="card-title">English Game</div>
+                <div class="card-url">https://yukityu.github.io/englishgame/</div>
+            </div>
+            <a href="https://yukityu.github.io/englishgame/" target="_blank" class="btn">英文重組句子</a>
+        </div>
+
+        <!-- Chinese Game 2 -->
+        <div class="card">
+            <div>
+                <div class="card-title">Chinese Game 2</div>
+                <div class="card-url">https://yukityu.github.io/chinese2/</div>
+            </div>
+            <a href="https://yukityu.github.io/chinese2/" target="_blank" class="btn">中文職業</a>
+        </div>
+
+        <!-- Chinese Game 1 -->
+        <div class="card">
+            <div>
+                <div class="card-title">Chinese Game 1</div>
+                <div class="card-url">https://yukityu.github.io/chinese/</div>
+            </div>
+            <a href="https://yukityu.github.io/chinese/" target="_blank" class="btn">中文重組句子</a>
+        </div>
+
+        <!-- Chinese Game 5 -->
+        <div class="card">
+            <div>
+                <div class="card-title">Chinese Game 5</div>
+                <div class="card-url">https://yukityu.github.io/chinese5/</div>
+            </div>
+            <a href="https://yukityu.github.io/chinese5/" target="_blank" class="btn">森林認字</a>
+        </div>
+
+        <!-- English Game 1 -->
+        <div class="card">
+            <div>
+                <div class="card-title">English Game 1</div>
+                <div class="card-url">https://yukityu.github.io/englishgame1/</div>
+            </div>
+            <a href="https://yukityu.github.io/englishgame1/" target="_blank" class="btn">英文職業</a>
+        </div>
+    </div>
+
+</body>
+</html>
